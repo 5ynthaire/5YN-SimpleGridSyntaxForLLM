@@ -8,6 +8,13 @@ Large language models(LLM) can interpret abstract, human-friendly descriptions o
 
 This repository proposes minimal, intuitive textual notations that separate structure from content and styling, allowing humans to describe grids quickly and naturally while leveraging the LLM as an intelligent translator to produce deployable code.
 
+## About
+
+**X**: [@5ynthaire](https://x.com/5ynthaire)  
+**GitHub**: [https://github.com/5ynthaire](https://github.com/5ynthaire)  
+**Mission**: Transcending creative limits through human-AI synergy  
+**Attribution**: Developed with Grok 4.1 by xAI (no affiliation).  
+
 ## Visual Row Span Syntax 
 
 Concept: Notate cells as visualized, with HTML \<table\> style cell merging, but using shorthands
@@ -59,13 +66,6 @@ Merges:
 | Visual intuitiveness | High (WYSIWYG alignment) | Medium (mental coordinate mapping) |
 | LLM reliability | Excellent (explicit positions) | Excellent (simple list parsing) |
 
-
-## About
-
-**X**: [@5ynthaire](https://x.com/5ynthaire)  
-**GitHub**: [https://github.com/5ynthaire](https://github.com/5ynthaire)  
-**Mission**: Transcending creative limits through human-AI synergy  
-**Attribution**: Developed with Grok 4.1 by xAI (no affiliation).  
 
 ## License
 
