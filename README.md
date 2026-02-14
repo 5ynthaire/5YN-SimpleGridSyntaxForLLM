@@ -52,7 +52,7 @@ Merges:
 ## Comparison
 
 | Aspect |  Visual Row Span Syntax | Tensor Grid Syntax |
-| ------------------------------------------------------- |
+|--------|-------------------------|--------------------|
 | Best for | Irregular/art panels, small grids | Large data tables, few merges |
 | Cognitive style | Drawing/sketching rows | Declarative ranges |
 | Verbosity for uniform | Higher (explicit "1"s, copy-paste rows) | Lower (define once, list exceptions) |
