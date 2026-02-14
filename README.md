@@ -56,6 +56,77 @@ Merges:
 1,5 - 4,5    # bottom footer
 ```
 
+## Useage
+
+Collaborate with LLMs by providing
+
+1. Syntax rules
+2. Grid definition
+3. Instructions
+
+**Example input**
+```
+Generate a complete, standalone HTML <table> (with proper colspan and rowspan attributes) that exactly matches this grid structure. Use basic inline styles for borders, padding, and centering to make it visible. Fill cells with simple placeholder text like "Header", "Sidebar", "Cell RowX-ColY", or "Footer" since no content is provided.
+
+**Syntax Rules**
+- Lines represent rows.
+- Entries are space-separated and aligned.
+- Standalone "1" indicates a single 1x1 cell.
+- "WxH" indicates a merged cell spanning W columns and H rows.
+- Merged cells are only mentioned at their top-left primary position; covered positions below/right are skipped (blank/indented).
+
+Grid structure:
+4x1
+1x3  1  1  1
+      1  1  1
+      1  1  1
+4x1
+
+```
+
+**Example output**
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Table</title>
+  <style>
+    table { width: 100%; border-collapse: collapse; }
+    td { border: 1px solid #000; padding: 20px; text-align: center; }
+  </style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <td colspan="4">Header</td>
+  </tr>
+  <tr>
+    <td rowspan="3">Sidebar</td>
+    <td>Cell Row2-Col2</td>
+    <td>Cell Row2-Col3</td>
+    <td>Cell Row2-Col4</td>
+  </tr>
+  <tr>
+    <td>Cell Row3-Col2</td>
+    <td>Cell Row3-Col3</td>
+    <td>Cell Row3-Col4</td>
+  </tr>
+  <tr>
+    <td>Cell Row4-Col2</td>
+    <td>Cell Row4-Col3</td>
+    <td>Cell Row4-Col4</td>
+  </tr>
+  <tr>
+    <td colspan="4">Footer</td>
+  </tr>
+</table>
+
+</body>
+</html>
+```
+
 ## Comparison
 
 | Aspect |  Visual Row Span Syntax | Tensor Grid Syntax |
