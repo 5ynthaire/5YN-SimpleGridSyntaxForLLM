@@ -10,7 +10,7 @@ This repository proposes minimal, intuitive textual notations that separate stru
 
 ## Visual Row Span Syntax 
 
-Concept: Notate cells as visualized, with HTML <table> style cell merging, but using shorthands
+Concept: Notate cells as visualized, with HTML \<table\> style cell merging, but using shorthands
 
 **Syntax Rules**
 
