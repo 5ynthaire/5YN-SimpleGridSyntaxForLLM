@@ -1,6 +1,6 @@
 # Simple Grid Syntaxes For LLM Collaboration
 
-A collection of lightweight, human-editable syntaxes for defining grid/table structures (with rectangular merges) for ad-hoc collaboration with LLMs. Ideal for generating HTML/Markdown tables or CSS grids without verbose markup. Structure only—no embedded content or styling.
+A collection of lightweight, human-editable syntaxes for defining grid/table structures for ad-hoc collaboration with LLMs. Ideal for generating HTML/Markdown tables or CSS grids without verbose markup. Structure only—no embedded content or styling.
 
 ## Purpose
 
